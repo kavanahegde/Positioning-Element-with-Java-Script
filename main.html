@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Element</title>
+    <script type="text/javascript" src="position.js"></script>
+    <style>
+        #buttons {
+            text-align: center;
+        }
+        #square{
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            padding: 10px;
+            background-color: rgb(77, 77, 161);
+        }
+        div{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Positioning Element</h1>
+    <div id="buttons">
+        <button type="button" name="left"
+        onclick="pos(-1,0);">left</button>
+        <button type="button" name="Right"
+        onclick="pos(1,0);">Right</button>
+        <button type="button" name="up"
+        onclick="pos(0,-1);">up</button>
+        <button type="button" name="Down"
+        onclick="pos(0,1);">Down</button>
+        <button type="button" name="Hide"
+        onclick="hidesquare();">Hide</button>
+        <button type="button" name="show"
+        onclick="showsquare();">show</button>
+
+    </div>
+    <hr/>
+    <div id="square">
+        Thsi square is an absolutely positione layer <br>that can move using the button above
+
+    </div>
+</body>
+</html>
